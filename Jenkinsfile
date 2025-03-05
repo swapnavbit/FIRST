@@ -6,7 +6,7 @@ pipeline {
 stage('clone') {  // Stage for building your project
             steps {
                 // echo 'Building the project...'
-                git 'https://github.com/gollapallydeepthi/devops__.git'
+                git 'https://github.com/swapnavbit/FIRST.git'
                 // Add build commands here (e.g., mvn, npm, etc.)
             }
         }
@@ -14,7 +14,7 @@ stage('clone') {  // Stage for building your project
 stage('Build') {  // Stage for building your project
             steps {
                 echo 'Building the project...'
-                sh 'javac Helloworld.java'
+                sh 'javac HelloWorld.java'
                 // Add build commands here (e.g., mvn, npm, etc.)
             }
         }
@@ -22,7 +22,7 @@ stage('Build') {  // Stage for building your project
         stage('Test') {  // Stage for testing the project
             steps {
                 echo 'Running tests...'
-            sh  'java Helloworld'
+            sh  'java HelloWorld'
                 // Add test commands here (e.g., mvn test, npm test, etc.)
             }
         }
